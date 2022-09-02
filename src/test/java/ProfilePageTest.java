@@ -2,12 +2,9 @@ import pageobject.*;
 import io.qameta.allure.Description;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.After;
-
 import static org.junit.Assert.*;
-
 import org.junit.Before;
 import org.junit.Test;
-
 import java.util.Map;
 
 import static com.codeborne.selenide.Selenide.*;
@@ -88,7 +85,6 @@ public class ProfilePageTest extends Config {
     @Test
     @DisplayName("Checkout: authorized user can go from the Personal Account to the Main Page if click on the logo button")
     @Description("After successful transition button 'Make Order' will be displayed")
-
     public void goToMainPageFromProfileWithBurgerLogoTest() {
         mainPage.signInButtonClick()
                 .setEmail(email)
